@@ -1,18 +1,24 @@
 #!/usr/bin/python3
 
 def initialise_tableau(taille):
-    ...
-
-
+    tableau = [0]*taille
+    return tableau
 def saisir_valeurs(tableau, taille):
-    ...
+    tableau[taille] = int(input())
+    
 
 def somme(tableau):
-    ...
+    res = 0
+    for i in range(len(tableau)):
+        res += tableau[i]
+    return res
 
 
 def moyenne(tableau):
-    ...
+    som = somme(tableau)/len(tableau)
+    return som
+    
+
 
 # pour validation, ne pas modifier
 def test():
