@@ -1,7 +1,21 @@
 #!/usr/bin/python3
 
 def etendue(tableau):
-    ...
+    mx = 0
+    mi = tableau[0]
+    for i in range(len(tableau)):
+        if mx <= tableau[i] :
+            mx = tableau[i]
+        if mi >= tableau[i]:
+            mi = tableau[i]
+    return mx-mi
+    
+    
+
+            
+            
+    
+            
 
 # pour validation, ne pas modifier
 def test():
