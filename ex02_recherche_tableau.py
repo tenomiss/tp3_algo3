@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 def recherche(valeur, tableau):
-    ...
+    for i in range(len(tableau)):
+        if tableau[i] == valeur:
+            return i
+    return -1
 
 # pour validation, ne pas modifier
 def test():
